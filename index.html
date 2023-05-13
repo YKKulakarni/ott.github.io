@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        html{
+          scroll-behavior: smooth;
+        }
+      .navbar {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px 0px;
+        width: 100%;
+        position: fixed;
+        top:0px
+      
+        
+      }
+      .nav-items a{
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+      }
+      .logo img{
+        
+        position: absolute;
+        left: 20px;
+        top:20px
+      }
+      .nav-items{
+        position: absolute;
+        right: 30px;
+        top:40px;
+      }
+      .nav-items a:hover{
+        text-decoration: underline;
+      }
+      .home img{
+        width: 100%;
+        height:100%;
+      }
+      .carousel {
+        width: 100%;
+        height:100%;
+      }
+      .home{
+        margin-top: 30px;
+        width: 100%;
+        height:100%;
+      }
+      h2{
+        color: whitesmoke;
+        font-family: tahoma;
+        display: inline;
+      }
+      h2:hover{
+        color: skyblue;
+      }
+      .Fav img{
+        margin: 5px;
+  
+      }
+      .Fav img:hover{
+        transform: scale(1.1);
+        transition: 0.5s ease-in-out;
+        border-radius: 10px;
+      }
+      .Fav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .carousel-inner img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img
+          src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+          alt=""
+        />
+      </div>
+      <div class="nav-items">
+        <a href="#home">Home</a>
+        <a href="#Fav">Favourites</a>
+        <a href="#new">Newly added</a>
+        <a href="#">About</a>
+        <a href="#">Sign-in</a>
+      </div>
+    </div>
+    <!--Carousel start-->
+    
+      <section class="carousel" style="margin-top:100px;">
+        <div class="home" id="home"></div>
+      
+         
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4248/1364248-h-04994afb88d4" alt="Los Angeles" style="width:100%;">
+            </div>
+      
+            <div class="item">
+              <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/6478/1436478-h-6c580540defd" alt="Chicago" style="width:100%;">
+            </div>
+          
+            <div class="item">
+              <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/1209/1431209-h-49df54f9aa5c" alt="New york" style="width:100%; ">
+            </div>
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    
+  </section>
+    <!--Carousel end-->
+
+    <div class="film-tray">
+      <h2 id="Fav">Favourites</h2>
+      <div class="Fav">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4295/754295-v" alt="" width="15%">
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4665/64665-v" alt="" width="15%">
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/6088/1000216088/1000216088-v" alt="" width="15%">
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4920/1044920-v-1ac34349aead" alt="" width="15%">
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2181/1122181-v-0fa7b5e161de" alt="" width="15%">
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/4189/1000074189/1000074189-v" alt="" width="15%">
+      </div>
+      <h2 id="new">Newly Added</h2>
+      <div class="newly added">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4295/754295-v" alt="" width="15%">
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4665/64665-v" alt="" width="15%">
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/6088/1000216088/1000216088-v" alt="" width="15%">
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4920/1044920-v-1ac34349aead" alt="" width="15%">
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2181/1122181-v-0fa7b5e161de" alt="" width="15%">
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/4189/1000074189/1000074189-v" alt="" width="15%">
+      </div>
+    </div>
+
+    <!-- Register form start-->
+    <section style=" margin-top:50px;">
+     
+      <div class="container" style="background-color:white; border-radius:5px; padding: 50px 100px 100px 100px;">
+    <form class="row g-3">
+      <center> <h1>Registration Form </h1></center>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+          <option  selected>---select----</option>
+          <option >Karnataka</option>
+          <option>Kerala</option>
+          <option>Maharastra</option>
+          <option>Gujarat</option>
+          <option>Assam</option>
+          <option>Tamilnadu</option>
+          <option>Arunachal Pradesh</option>
+          <option>Madyapradesh</option>
+          <option>Nagaland/option>
+          <option>Andra Pradesh</option>
+          <option>Telangana</option>
+          
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </div>
+    </form>
+  </div>
+  </section>
+    <!-- Register form end-->
+
+  </body>
+</html>
